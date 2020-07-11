@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>INSERT</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <h1 class="display-4">Incersion de datos</h1>
+                    <hr class="bg-info">
+                    <p class="text-danger small pt-0 mt-0">*Todos los campos son obligatorios</p>
+                    <form>
+                        <div class="row form-group">
+                            <label for="nombre" class="col form-label col-md-4">Nombre:</label>
+                            <div class="col-md-8">
+                                <input type="text" name="nombre" value="" id="nombre" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="primerapellido" class="col form-label col-md-4">Primer apellido:</label>
+                            <div class="col-md-8">
+                                <input type="text" name="primerapellido" value="" id="primerapellido" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="segundoapellido" class="col form-label col-md-4">Segundo apellido:</label>
+                            <div class="col-md-8">
+                                <input type="text" name="segundoapellido" value="" id="segundoapellido" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="matricula" class="col form-label col-md-4">Matricula:</label>
+                            <div class="col-md-8">
+                                <input type="number" name="matricula" value="" id="matricula" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="edad" class="col form-label col-md-4">Edad:</label>
+                            <div class="col-md-4">
+                                <input type="number" name="edad" value="" id="edad" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="fechanacimiento" class="col form-label col-md-4">Fecha de nacimiento:</label>
+                            <div class="col-md-6">
+                                <input type="date" name="fechanacimiento" value="" id="fechanacimiento" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label form="" class="col-form-label col-md-4"> Genero:</label>
+                            <div class="col-md-8 form-check form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="genero">
+                                    Mujer
+                                </label>
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="genero">
+                                    Hombre
+                                </label>
+                            </div>
+                        </div>
+                        <label for="fechanacimiento" class="col form-label col-md-4">Estado:
+                            <div class="col-md-6">
+                                <select>
+                                    <option hidden >Elija su estado</option>
+                                    <option> Aguascalientes </option>
+                                    <option> Baja california </option>
+                                    <option> CDMX </option>
+                                    <option> Campeche </option>
+                                    <option> Hidalgo </option>
+                                    <option> Durango </option>
+                                    <option> Jalisco </option>
+                                    <option> Morelos </option>
+                                    <option> Puebla </option>
+                                    <option> Queretaro </option>
+                                </select>
+                            </div>
+                        </label>
+                        <button type="submit" class="btn btn-info">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
