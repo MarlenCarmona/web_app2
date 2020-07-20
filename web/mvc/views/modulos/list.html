@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+$def with(result)
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -52,34 +53,19 @@
         <div class="container">
             <div class="table-responsive">
                 <table class="table  table table-dark table-bordered table-hover table-condensed">
+                    $for row in result:
                     <tr>
-                        <th>Nombre</th>
-                        <th>Primer apellido</th>
-                        <th>Segundo apellido</th>
-                        <th>Edad</th>
-                        <th>Fecha de nacimiento</th>
-                        <th>Sexo</th>
-                        <th>Estado</th>
+                        <th>$row['id_persona']</th>
+                        <th>$row['nombre']</th>
+                        <th>$row['primer_apellido']</th>
+                        <th>$row['segundo_apellido']</th>
+                        <th>$row['edad']</th>
+                        <th>$row['fecha_nac']</th>
+                        <th>$row['genero']</th>
+                        <th>$row['estado']</th>
                     </tr>
                     <tr>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -96,8 +82,30 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
                     </tr>
                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
