@@ -1,7 +1,7 @@
 from web.template import ALLOWED_AST_NODES
 ALLOWED_AST_NODES.append('Constant')
 import web 
-import mvc.models.personas as person
+import mvc.models.personas as personas
 
 model_personas = personas.Personas()
 render = web.template.render("mvc/views/modulos/")
