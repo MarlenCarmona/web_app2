@@ -16,28 +16,28 @@
                     <p class="text-danger small pt-0 mt-0">*Todos los campos son obligatorios</p>
                     <form method="POST" action="" novalidate>
                         <div class="row form-group">
+                            <div class="row form-group">
+                                <label for="id_usuario" class="col form-label col-md-4">Matricula:</label>
+                                <div class="col-md-8">
+                                    <input type="number" name="id_usuario"  id="id_usuario" class="form-control" >
+                                </div>
                             <label for="nombre" class="col form-label col-md-4">Nombre:</label>
                             <div class="col-md-8">
-                                <input type="text" name="nombre" value="" id="name" class="form-control">
+                                <input type="text" name="nombre" value="" id="nombre" class="form-control">
                             </div>
                         </div>
                         <div class="row form-group">
                             <label for="primerapellido" class="col form-label col-md-4">Primer apellido:</label>
                             <div class="col-md-8">
-                                <input type="text" name="primerapellido" value="" id="primeroa" class="form-control">
+                                <input type="text" name="primerapellido" value="" id="primerapellido" class="form-control">
                             </div>
                         </div>
                         <div class="row form-group">
                             <label for="segundoapellido" class="col form-label col-md-4">Segundo apellido:</label>
                             <div class="col-md-8">
-                                <input type="text" name="segundoapellido" value="" id="segundoa" class="form-control">
+                                <input type="text" name="segundoapellido" value="" id="segundoapellido" class="form-control">
                             </div>
                         </div>
-                        <div class="row form-group">
-                            <label for="matricula" class="col form-label col-md-4">Matricula:</label>
-                            <div class="col-md-8">
-                                <input type="number" name="matricula" value="" id="matricula" class="form-control">
-                            </div>
                         </div>
                         <div class="row form-group">
                             <label for="edad" class="col form-label col-md-4">Edad:</label>
@@ -48,14 +48,14 @@
                         <div class="row form-group">
                             <label for="fechanacimiento" class="col form-label col-md-4">Fecha de nacimiento:</label>
                             <div class="col-md-6">
-                                <input type="date" name="fechanacimiento" value="" id="fecha" class="form-control">
+                                <input type="date" name="fechanacimiento" value="" id="fechanacimiento" class="form-control">
                             </div>
                         </div>
-                        <div class="row form-group">
-                            <input type="date" class="form-control" id="fecha" name="fecha"></div>Genero
-                                <div><select class="form-control form-control" id="genero" name="genero">
-                                    <option>Hombre</option><option>Mujer</option></select></div> 
-                        </div>
+                        <label for="genero"></label>Genero<select class="custom-select" id="genero" name="genero" required>
+                            <option selected disabled value="">Hombre</option>
+                            <option>Mujer</option></select>
+                          </div>
+                         </label>
                         <label for="estado"></label>Estado<select class="custom-select" id="estado" name="estado" required>
                                   <option selected disabled value="">Estado</option>
                                   <option>Queretaro</option></select>
@@ -63,8 +63,8 @@
                         </label>
                         <button type="submit" class="btn btn-info">Guardar</button>
                         <li class="nav-item">
-          <a class="nav-link" href="/">Regresar</a>
-        </li>
+                           <a class="nav-link" href="/list">Regresar</a>
+                        </li>
                     </form>
                 </div>
             </div>

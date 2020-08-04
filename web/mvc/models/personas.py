@@ -5,8 +5,8 @@ class Personas():
     def connect(self):
         try:
             self.cnx=mysql.connector.connect(
-                user='user_mar',
-                password='User_bd',
+                user='root',
+                password='lup11t44',
                 host='127.0.0.1',
                 port=3306,
                 database='user_db'
@@ -21,16 +21,15 @@ class Personas():
             self.cursor.execute(query)
             result = []
             for row in self.cursor:
-                r={
+                r = {
                     'id_usuario':row[0],
                     'nombre':row[1],
                     'primer_apellido':row[2],
                     'segundo_apellido':row[3],
-                    'matricula':row[4],
-                    'edad':row[5],
-                    'fecha_nac':row[6],
-                    'genero':row[7],
-                    'estado':row[8]
+                    'edad':row[4],
+                    'fecha_nac':row[5],
+                    'genero':row[6],
+                    'estado':row[7]
                 }
                 result.append(r)
             self.cursor.close()
@@ -40,37 +39,35 @@ class Personas():
             print(e)
             result=[]
             return result
-    def view(self,matricula):
+    def view(self,id_usuario):
         try:
             self.connect()
-            query = ("SELECT * FROM personass WHERE matricula = %s;")
-            values = (matricula,)
+            query = ("SELECT * FROM usuarios WHERE id_usuario = %s;")
+            values = (id_usuario,)
             self.cursor.execute(query,values)
             result = []
             for row in self.cursor:
-                for row in self.cursor:
-                ={
-                    'id_usuario':row[0],
+                diccionario = {
+                   'id_usuario':row[0],
                     'nombre':row[1],
                     'primer_apellido':row[2],
                     'segundo_apellido':row[3],
-                    'matricula':row[4],
-                    'edad':row[5],
-                    'fecha_nac':row[6],
-                    'genero':row[7],
-                    'estado':row[8]
+                    'edad':row[4],
+                    'fecha_nac':row[5],
+                    'genero':row[6],
+                    'estado':row[7]
                 }
-                result.append()
+                result.append(diccionario)
             self.cursor.close()
             self.cnx.close()
             return result
         except Exception as e:
             print(e)
-    def insert(self, nombre,primer_apellido,segundo_apellido,matricula,edad,fecha_nac,genero,estado):
+    def insert(self,id_usuario, nombre,primer_apellido,segundo_apellido,edad,fecha_nac,genero,estado):
         try:
             self.connect()
-            query = ("INSERT INTO personas (nombre,primer_apellido,segundo_apellido,matricula,edad,fecha_nac,genero,estado) values(%s,%s,%s,%s,%s,%s,%s,%s);")
-            values = (nombre,primer_apellido,segundo_apellido,matricula,edad,fecha_nac,genero,estado)
+            query = ("INSERT INTO usuarios (id_usuario,nombre,primer_apellido,segundo_apellido,edad,fecha_nac,genero,estado) values(%s,%s,%s,%s,%s,%s,%s,%s);")
+            values = (id_usuario,nombre,primer_apellido,segundo_apellido,edad,fecha_nac,genero,estado)
             self.cursor.execute(query, values)
             self.cnx.commit()
             self.cursor.close()
@@ -82,7 +79,7 @@ class Personas():
 
 objeto = Personas()
 objeto.connect()
-objeto.insert("Marlen","carmona","Lopez","1718110379","19","05/10/00","Femenino","Hidalgo")
+#objeto.insert("1718110376","Marlen","carmona","Lopez","19","05/10/00","Femenino","Hidalgo")
 
 for row in objeto.select():
     print(row)
