@@ -19,7 +19,7 @@ $def with(result)
         </div>
         <div class="row justify-content-center">
         <form method="POST" action="" class="form-inline my-2 my-lg-0">
-            <div class="form-group">
+                   <div class="form-group">
              <label for="matricula">Matricula del alumno</label>
              <input type="number" readonly class="form-control" id="matricula" name="matricula" value="$result['matricula']">
             </div>
@@ -31,12 +31,12 @@ $def with(result)
 
             <div class="form-group">
               <label for="primero">Apellido paterno del alumno</label>
-              <input type="text" readonly class="form-control" id="primero" name="primero" value="$result['apellido_pa']">
+              <input type="text" readonly class="form-control" id="primero" name="primero" value="$result['primerapellido']">
             </div>
 
             <div class="form-group">
               <label for="segundo">Apellido materno del alumno</label>
-              <input type="text" readonly class="form-control" id="segundo" name="segundo" value="$result['apellido_ma']">
+              <input type="text" readonly class="form-control" id="segundo" name="segundo" value="$result['segundoapellido']">
             </div>
 
             <div class="form-group">
@@ -46,12 +46,12 @@ $def with(result)
 
             <div class="form-group">
               <label for="fecha">Fecha de nacimiento del alumno</label>
-              <input type="text" readonly class="form-control" id="fecha" name="fecha" value="$result['fecha_na']">
+              <input type="text" readonly class="form-control" id="fecha" name="fecha" value="$result['fechanacimiento']">
             </div>
 
             <div class="form-group">
               <label for="sexo">Sexo</label>
-              <input type="text" readonly class="form-control" id="sexo" name="sexo" value="$result['sexo']">
+              <input type="text" readonly class="form-control" id="sexo" name="sexo" value="$result['genero']">
             </div>
 
             <div class="form-group">
