@@ -63,6 +63,13 @@ $def with(result)
                         <th>$row['fecha_nac']</th>
                         <th>$row['genero']</th>
                         <th>$row['estado']</th>
+                        <td>
+                          <a href="/update/$row['matricula']"><button type="button" class="btn" style="background:#be69f0">Update</button></a>
+                        </td>
+                        <td>
+                          <a href="/delete/$row['matricula']">
+                          <button type="button" class="btn" style="background:#f15948">Delete</button></a>
+                        </td>
                     </tr>
                 </table>
             </div>
