@@ -4,7 +4,7 @@ $def with(result)
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>UPDATE</title>
+        <title>VIEW</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
@@ -12,204 +12,62 @@ $def with(result)
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-7">
-                    <h1 class="display-4">Actualizar datos </h1>
+                    <h1 class="display-4">Actualizar datos</h1>
                     <hr class="bg-info">
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <form method="POST" action="" class="form-inline my-2 my-lg-0">
-                <div class="form-group">
-             <label for="matricula">Matricula del alumno</label>
-             <input type="number" readonly class="form-control" id="matricula" name="matricula" value="$result['matricula']">
-            </div>
+        <a class="navbar-brand" href="/list">REGRESAR</a></h3>
+      </li>
+    <form method="POST" action="">
+      <div class="form-group">
+        <label for="id_usuario">Matricula</label>
+        <input type="number" readonly class="form-control" id="id_usuario" name="id_usuario" value="$result['id_usuario']">
+      </div>
 
-            <div class="form-group">
-              <label for="name">Nombre del alumno</label>
-              <input type="text" readonly class="form-control" id="name" name="name" value="$result['nombre']">
-            </div>
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" required class="form-control" id="nombre" name="nombre" value="$result['nombre']">
+      </div>
 
-            <div class="form-group">
-              <label for="primero">Apellido paterno del alumno</label>
-              <input type="text" readonly class="form-control" id="primero" name="primero" value="$result['primerapellido']">
-            </div>
+      <div class="form-group">
+        <label for="primer_apellido">Apellido paterno</label>
+        <input type="text" required class="form-control" id="primer_apellido" name="primer_apellido" value="$result['primer_apellido']">
+      </div>
 
-            <div class="form-group">
-              <label for="segundo">Apellido materno del alumno</label>
-              <input type="text" readonly class="form-control" id="segundo" name="segundo" value="$result['segundoapellido']">
-            </div>
+      <div class="form-group">
+        <label for="segundo_apellido">Apellido</label>
+        <input type="text" required class="form-control" id="segundo_apellido" name="segundo_apellido" value="$result['segundo_apellido']">
+      </div>
+      <div class="form-group">
+        <label for="edad">Edad/label>
+        <input type="number" required class="form-control" id="edad" name="edad" value="$result['edad']">
+      </div>
 
-            <div class="form-group">
-              <label for="edad">Edad del alumno</label>
-              <input type="number" readonly class="form-control" id="edad" name="edad" value="$result['edad']">
-            </div>
+      <div class="form-group">
+        <label for="fecha_nac">Fecha de nacimiento </label>
+        <input type="text" required class="form-control" id="fecha_nac" name="fecha_nac" value="$result['fecha_nac']">
+      </div>
 
-            <div class="form-group">
-              <label for="fecha">Fecha de nacimiento del alumno</label>
-              <input type="text" readonly class="form-control" id="fecha" name="fecha" value="$result['fechanacimiento']">
-            </div>
+      <div class="form-group">
+        <label for="genero">Genero</label>
+        <input type="text" required class="form-control" id="genero" name="genero" value="$result['genero']">
+      </div>
 
-            <div class="form-group">
-              <label for="sexo">Sexo</label>
-              <input type="text" readonly class="form-control" id="sexo" name="sexo" value="$result['genero']">
-            </div>
-
-            <div class="form-group">
-              <label for="estado">Estado</label>
-              <input type="text" readonly class="form-control" id="estado" name="estado" value="$result['estado']">
-            </div>
-              </form>
-            </div>
-        <div class="dropdown-divider"></div>
-        <body>
-
-            <div class="row justify-content-center">
-            <div class="container">
-                <div class="table-responsive">
-                    <table class="table  table table-dark table-bordered table-hover table-condensed">
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Primer apellido</th>
-                            <th>Segundo apellido</th>
-                            <th>Matricula</th>
-                            <th>Edad</th>
-                            <th>Fecha de nacimiento</th>
-                            <th>Sexo</th>
-                            <th>Estado</th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-        <h2>Ingrese los datos nuevos</h2>
-        </div>
-        <div class="row justify-content-center">
-        <form>
-            <div class="row form-group">
-                <label for="nombre" class="col form-label col-md-4">Nombre:</label>
-                <div class="col-md-8">
-                    <input type="text" name="nombre" value="" id="nombre" class="form-control">
-                </div>
-            </div>
-            <div class="row form-group">
-                <label for="primerapellido" class="col form-label col-md-4">Primer apellido:</label>
-                <div class="col-md-8">
-                    <input type="text" name="primerapellido" value="" id="primerapellido" class="form-control">
-                </div>
-            </div>
-            <div class="row form-group">
-                <label for="segundoapellido" class="col form-label col-md-4">Segundo apellido:</label>
-                <div class="col-md-8">
-                    <input type="text" name="segundoapellido" value="" id="segundoapellido" class="form-control">
-                </div>
-            </div>
-            <div class="row form-group">
-                <label for="edad" class="col form-label col-md-4">Edad:</label>
-                <div class="col-md-4">
-                    <input type="number" name="edad" value="" id="edad" class="form-control">
-                </div>
-            </div>
-            <div class="row form-group">
-                <label for="fechanacimiento" class="col form-label col-md-4">Fecha de nacimiento:</label>
-                <div class="col-md-6">
-                    <input type="date" name="fechanacimiento" value="" id="fechanacimiento" class="form-control">
-                </div>
-            </div>
-            <div class="row form-group">
-                <label form="" class="col-form-label col-md-4"> Genero:</label>
-                <div class="col-md-8 form-check form-check-inline">
-                    <label for="" class="form-check-label">
-                        <input type="radio" class="form-check-input" name="genero">
-                        Mujer
-                    </label>
-                    <label for="" class="form-check-label">
-                        <input type="radio" class="form-check-input" name="genero">
-                        Hombre
-                    </label>
-                </div>
-            </div>
-            <label for="fechanacimiento" class="col form-label col-md-4">Estado:
-                <div class="col-md-6">
-                    <select>
-                        <option hidden >Elija su estado</option>
-                        <option> Aguascalientes </option>
-                        <option> Baja california </option>
-                        <option> CDMX </option>
-                        <option> Campeche </option>
-                        <option> Hidalgo </option>
-                        <option> Durango </option>
-                        <option> Jalisco </option>
-                        <option> Morelos </option>
-                        <option> Puebla </option>
-                        <option> Queretaro </option>
-                    </select>
-                </div>
-            </label>
-            <div class="row justify-content-center">
-            <button type="submit" class="btn btn-info">Actualizar</button>
-        </div>
-        </form>
-        </div>
-        <div class="row justify-content-center">
-            <a class="nav-link" href="/list">Volver</a>
-        </div>
-    </body>
-
+      <div class="form-group">
+        <label for="estado">Estado</label>
+        <input type="text" required class="form-control" id="estado" name="estado" value="$result['estado']">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Update</button>
+      </div>
+    </form>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</html>
+    </body>
+        </html>

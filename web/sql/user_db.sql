@@ -20,5 +20,4 @@ VALUES
 
 /*CREATE USER 'user_m'@'localhost' IDENTIFIED By 'User_bd';
 GRANT ALL PRIVILEGES ON user_db. *TO 'user_m'@'localhost';
-FLUSH PRIVILEGES;
-*/
+FLUSH PRIVILEGES;*/

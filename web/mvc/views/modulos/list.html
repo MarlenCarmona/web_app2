@@ -30,17 +30,8 @@ $def with(result)
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Actions
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/delete">BORRAR</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/insert">INSERTAR</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/update">ACTUALIZAR</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/view">VER</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/">INDEX</a>
-                
               </div>
               <li class="nav-item">
                 <a class="nav-link" href="/">Regresar</a>
@@ -63,13 +54,8 @@ $def with(result)
                         <th>$row['fecha_nac']</th>
                         <th>$row['genero']</th>
                         <th>$row['estado']</th>
-                        <td>
-                          <a href="/update/$row['matricula']"><button type="button" class="btn" style="background:#be69f0">Update</button></a>
-                        </td>
-                        <td>
-                          <a href="/delete/$row['matricula']">
-                          <button type="button" class="btn" style="background:#f15948">Delete</button></a>
-                        </td>
+                        <td><a href="/delete/$row['id_usuario']">Delete</a></td>
+                        <td><a href="/update/$row['id_usuario']">Update</a></td>
                     </tr>
                 </table>
             </div>

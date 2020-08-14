@@ -2,23 +2,23 @@ from web.template import ALLOWED_AST_NODES
 ALLOWED_AST_NODES.append('Constant')
 import web 
 
-import web.models.personas as personas
+import mvc.models.personas as personas
 model_personas = personas.Personas()
 
 render = web.template.render("mvc/views/modulos/")
 
 class Delete1():
-    def GET(self, matricula):
+    def GET(self, id_usuario):
       try:
-        result = model_personas.view(matricula)[0]
+        result = model_personas.view(id_usuario)[0]
         return render.delete(result)
       except Exception as e:
         return "Error" + str(e.args)
-    def POST(self, matricula):
+    def POST(self, id_usuario):
       try:
         form = web.input()
-        matricula = form['matricula']
-        result = model_personas.delete(matricula)
+        id_usuario = form.id_usuario
+        result = model_personas.delete(id_usuario)
         web.seeother('/list')
       except Exception as e:
         print(e)
