@@ -5,11 +5,11 @@ class Personas():
     def connect(self):
         try:
             self.cnx=mysql.connector.connect(
-                user='root',
-                password='lup11t44',
-                host='127.0.0.1',
+                user='zht1hmtzjrjk4vn4',
+                password='bdzz69ezxcntaw1b',
+                host='qf5dic2wzyjf1x5x.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
                 port=3306,
-                database='user_db'
+                database='gba825j9ugr2joc9'
                 )
             self.cursor = self.cnx.cursor()
         except Exception as e:
