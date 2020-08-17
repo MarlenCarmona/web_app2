@@ -1,0 +1,73 @@
+$def with(result)
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>VIEW</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <h1 class="display-4">Ver datos</h1>
+                    <hr class="bg-info">
+                </div>
+            </div>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="/list">Regresar</a>
+      </li>
+    <form>
+      <div class="form-group">
+        <label for="matricula">Matricula</label>
+        <input type="number" readonly class="form-control" id="matricula" name="matricula" value="$result['id_usuario']">
+      </div>
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" readonly class="form-control" id="name" name="name" value="$result['nombre']">
+      </div>
+
+      <div class="form-group">
+        <label for="primero">Apellido paterno</label>
+        <input type="text" readonly class="form-control" id="primero" name="primero" value="$result['primer_apellido']">
+      </div>
+
+      <div class="form-group">
+        <label for="segundo">Apellido</label>
+        <input type="text" readonly class="form-control" id="segundo" name="segundo" value="$result['segundo_apellido']">
+      </div>
+      
+
+
+      <div class="form-group">
+        <label for="edad">Edad/label>
+        <input type="number" readonly class="form-control" id="edad" name="edad" value="$result['edad']">
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">Fecha de nacimiento </label>
+        <input type="text" readonly class="form-control" id="fecha" name="fecha" value="$result['fecha_nac']">
+      </div>
+
+      <div class="form-group">
+        <label for="sexo">Genero</label>
+        <input type="text" readonly class="form-control" id="sexo" name="sexo" value="$result['genero']">
+      </div>
+
+      <div class="form-group">
+        <label for="estado">Estado</label>
+        <input type="text" readonly class="form-control" id="estado" name="estado" value="$result['estado']">
+      </div>
+    </form>>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+        </html>
